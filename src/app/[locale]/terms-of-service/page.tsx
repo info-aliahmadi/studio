@@ -2,16 +2,16 @@
 import Header from "@/components/landing/header";
 import Footer from "@/components/landing/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useTranslations } from "next-intl";
-import {unstable_setRequestLocale} from 'next-intl/server';
+import { getTranslations, unstable_setRequestLocale } from 'next-intl/server';
 
 type Props = {
   params: {locale: string};
 };
 
-export default function TermsOfServicePage({params: {locale}}: Props) {
+export default async function TermsOfServicePage(props: Props) { // Changed to accept full props
+  const locale = props.params.locale; // Access locale from props.params
   unstable_setRequestLocale(locale);
-  const t = useTranslations("TermsOfServicePage");
+  const t = await getTranslations("TermsOfServicePage");
   const currentDate = new Date().toLocaleDateString(locale === 'fa' ? 'fa-IR' : locale, { year: 'numeric', month: 'long', day: 'numeric' });
 
   return (

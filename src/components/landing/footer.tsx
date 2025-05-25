@@ -1,11 +1,11 @@
 
 import Link from "next/link";
 import { ScanLine, Facebook, Twitter, Linkedin, ChevronRight } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { getTranslations } from "next-intl/server"; // Changed from useTranslations
 
-export default function Footer() {
-  const t = useTranslations("Footer");
-  const tHeader = useTranslations("Header"); // For nav items
+export default async function Footer() { // Made component async
+  const t = await getTranslations("Footer"); // Changed to await getTranslations
+  const tHeader = await getTranslations("Header"); // Changed to await getTranslations
   const currentYear = new Date().getFullYear();
 
   const navItems = [

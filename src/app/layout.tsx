@@ -1,3 +1,4 @@
+
 import type {Metadata} from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
@@ -24,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"> {/* Removed className="dark" to enable light theme by default */}
-      <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
-        {children}
-        <Toaster />
-      </body>
+    <html lang="en">{/* Removed className="dark" to enable light theme by default */}
+    <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+      {children}
+      <Toaster />
+    </body>
     </html>
   );
 }

@@ -3,8 +3,9 @@ import { Geist, Geist_Mono } from 'next/font/google';
 import '../globals.css'; // Adjusted path
 import { Toaster } from "@/components/ui/toaster";
 import {NextIntlClientProvider} from 'next-intl';
-import {getMessages} from 'next-intl/server';
+import {getMessages, unstable_setRequestLocale} from 'next-intl/server';
 import { locales } from '@/i18n'; // Import locales
+import {notFound} from 'next/navigation';
 
 const geistSans = Geist({
   variable: '--font-geist-sans',
@@ -25,13 +26,20 @@ export function generateStaticParams() {
   return locales.map((locale) => ({locale}));
 }
 
-export default async function RootLayout({
-  children,
-  params: {locale}
-}: Readonly<{
+export default async function RootLayout(props: Readonly<{ // Changed to accept full props
   children: React.ReactNode;
   params: {locale: string};
 }>) {
+  const { children, params } = props; // Destructure props here
+  const locale = params.locale; // Access locale from params
+
+  // Validate that the incoming `locale` parameter is valid
+  if (!locales.includes(locale)) {
+    notFound();
+  }
+
+  unstable_setRequestLocale(locale);
+
   const messages = await getMessages();
   const dir = (locale === 'ar' || locale === 'fa') ? 'rtl' : 'ltr';
 
