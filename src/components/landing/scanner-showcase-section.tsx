@@ -8,7 +8,7 @@ export default function ScannerShowcaseSection() {
     <section id="features" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight hover:text-primary/90 transition-colors duration-300">
             Seamless Scanning, Simplified
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">

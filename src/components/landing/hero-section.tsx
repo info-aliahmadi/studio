@@ -35,7 +35,7 @@ export default function HeroSection() {
           )}
         >
           <span className="block">Modernize Your Checkout with</span>
-          <span className="block text-primary">SwiftScan POS</span>
+          <span className="block text-primary hover:opacity-90 transition-opacity duration-300">SwiftScan POS</span>
         </h1>
         <p
           className={cn(
