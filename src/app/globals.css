@@ -11,87 +11,88 @@ body {
     scroll-behavior: smooth;
   }
   :root {
-    --background: 210 17% 98%; /* Light theme default, overridden by .dark */
-    --foreground: 215 28% 17%; /* Light theme default, overridden by .dark */
+    --background: 49 60% 93%; /* Cosmic Latte */
+    --foreground: 120 1% 17%; /* Jet */
 
-    --card: 0 0% 100%;
-    --card-foreground: 215 28% 17%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 120 1% 17%; /* Jet */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 215 28% 17%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 120 1% 17%; /* Jet */
 
-    --primary: 243 78% 59%;
-    --primary-foreground: 0 0% 100%;
+    --primary: 345 76% 58%; /* Cerise */
+    --primary-foreground: 0 0% 100%; /* White */
 
-    --secondary: 330 83% 60%;
-    --secondary-foreground: 0 0% 100%;
+    --secondary: 14 100% 70%; /* Coral */
+    --secondary-foreground: 120 1% 17%; /* Jet */
 
-    --muted: 210 16% 93%;
-    --muted-foreground: 215 20% 45%;
+    --muted: 49 30% 88%; /* Lighter, desaturated Cosmic Latte */
+    --muted-foreground: 44 7% 45%; /* Slightly lighter Dim Gray */
 
-    --accent: 45 96% 56%;
-    --accent-foreground: 40 50% 15%;
+    --accent: 44 7% 41%; /* Dim Gray */
+    --accent-foreground: 49 60% 93%; /* Cosmic Latte (for text on Dim Gray) */
 
-    --destructive: 0 84% 60%;
-    --destructive-foreground: 0 0% 100%;
+    --destructive: 0 84% 60%; /* Default Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 210 14% 89%;
-    --input: 0 0% 100%;
-    --ring: 243 78% 59%;
+    --border: 49 20% 85%; /* Subtle Cosmic Latte based border */
+    --input: 0 0% 100%; /* White */
+    --ring: 345 76% 58%; /* Cerise (Primary) */
 
     --radius: 0.5rem;
 
-    --chart-1: 243 78% 59%;
-    --chart-2: 330 83% 60%;
-    --chart-3: 45 96% 56%;
-    --chart-4: 243 70% 70%;
-    --chart-5: 330 73% 75%;
+    --chart-1: 345 76% 58%; /* Cerise */
+    --chart-2: 14 100% 70%; /* Coral */
+    --chart-3: 44 7% 41%; /* Dim Gray */
+    --chart-4: 345 76% 70%; /* Lighter Cerise */
+    --chart-5: 14 100% 80%; /* Lighter Coral */
 
     /* Sidebar Colors for light theme */
-    --sidebar-background: 210 17% 96%;
-    --sidebar-foreground: 215 28% 17%;
-    --sidebar-primary: 243 78% 59%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 45 96% 56%;
-    --sidebar-accent-foreground: 40 50% 15%;
-    --sidebar-border: 210 14% 85%;
-    --sidebar-ring: 243 78% 59%;
+    --sidebar-background: 49 55% 91%; /* Slightly darker/off Cosmic Latte */
+    --sidebar-foreground: 120 1% 17%; /* Jet */
+    --sidebar-primary: 345 76% 58%; /* Cerise */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 44 7% 41%; /* Dim Gray */
+    --sidebar-accent-foreground: 49 60% 93%; /* Cosmic Latte */
+    --sidebar-border: 49 20% 85%; /* Subtle Cosmic Latte based border */
+    --sidebar-ring: 345 76% 58%; /* Cerise */
   }
 
   .dark {
-    --background: 220 25% 10%; /* Very Dark Blue */
-    --foreground: 210 30% 85%; /* Light Cool Gray */
+    /* These are the previous dark theme values, kept for reference or future use */
+    --background: 220 25% 10%; 
+    --foreground: 210 30% 85%;
 
-    --card: 220 25% 15%; /* Slightly Lighter Dark Blue */
-    --card-foreground: 210 30% 85%; /* Light Cool Gray */
+    --card: 220 25% 15%; 
+    --card-foreground: 210 30% 85%;
 
-    --popover: 220 25% 13%; /* Darker than card */
-    --popover-foreground: 210 30% 85%; /* Light Cool Gray */
+    --popover: 220 25% 13%;
+    --popover-foreground: 210 30% 85%;
 
-    --primary: 260 70% 60%; /* Vibrant Purple */
-    --primary-foreground: 0 0% 100%; /* White for contrast */
+    --primary: 260 70% 60%; 
+    --primary-foreground: 0 0% 100%; 
 
-    --secondary: 180 70% 50%; /* Bright Teal */
-    --secondary-foreground: 220 25% 10%; /* Dark Blue for contrast */
+    --secondary: 180 70% 50%; 
+    --secondary-foreground: 220 25% 10%; 
 
-    --muted: 220 20% 25%; /* Dark Gray */
-    --muted-foreground: 210 25% 60%; /* Medium Gray text */
+    --muted: 220 20% 25%; 
+    --muted-foreground: 210 25% 60%; 
 
-    --accent: 50 90% 55%; /* Gold Yellow */
-    --accent-foreground: 220 25% 10%; /* Dark Blue for contrast on yellow */
+    --accent: 50 90% 55%; 
+    --accent-foreground: 220 25% 10%; 
 
-    --destructive: 0 70% 55%; /* Vibrant Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    --destructive: 0 70% 55%; 
+    --destructive-foreground: 0 0% 100%; 
 
-    --border: 220 20% 30%; /* Darker Gray border */
-    --input: 220 20% 20%; /* Dark input background */
-    --ring: 260 70% 60%; /* Primary color for rings */
+    --border: 220 20% 30%; 
+    --input: 220 20% 20%; 
+    --ring: 260 70% 60%; 
 
-    --chart-1: 260 70% 60%; /* Vibrant Purple */
-    --chart-2: 180 70% 50%; /* Bright Teal */
-    --chart-3: 50 90% 55%; /* Gold Yellow */
-    --chart-4: 260 70% 70%; /* Lighter Purple */
-    --chart-5: 180 70% 65%; /* Lighter Teal */
+    --chart-1: 260 70% 60%; 
+    --chart-2: 180 70% 50%; 
+    --chart-3: 50 90% 55%; 
+    --chart-4: 260 70% 70%; 
+    --chart-5: 180 70% 65%; 
 
     /* Sidebar Colors for dark theme */
     --sidebar-background: 220 25% 12%;
