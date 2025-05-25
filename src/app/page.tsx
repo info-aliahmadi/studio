@@ -4,6 +4,7 @@ import HeroSection from "@/components/landing/hero-section";
 import ScannerShowcaseSection from "@/components/landing/scanner-showcase-section";
 import ReportGallerySection from "@/components/landing/report-gallery-section";
 import OfflineFeatureSection from "@/components/landing/offline-feature-section";
+import DebtCreditManagementSection from "@/components/landing/debt-credit-management-section";
 import TestimonialSection from "@/components/landing/testimonial-section";
 import ContactSection from "@/components/landing/contact-section";
 import Footer from "@/components/landing/footer";
@@ -17,6 +18,7 @@ export default function HomePage() {
         <ScannerShowcaseSection />
         <ReportGallerySection />
         <OfflineFeatureSection />
+        <DebtCreditManagementSection />
         <TestimonialSection />
         <ContactSection />
       </main>

@@ -38,6 +38,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link href="#customer-accounts" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Customer Accounts
+                </Link>
+              </li>
+              <li>
                 <Link href="#contact" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
                   <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
                   Contact Us
