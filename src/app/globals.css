@@ -11,16 +11,29 @@ body {
     scroll-behavior: smooth;
   }
   :root {
-    --background: 49 60% 93%; /* Cosmic Latte */
-    --foreground: 120 1% 17%; /* Jet */
+    --tomato: #f06449ff;
+    --isabelline: #ede6e3ff;
+    --platinum: #dadad9ff;
+    --black-olive: #36382eff;
+    --vivid-sky-blue: #5bc3ebff;
+    /* $tomato: hsla(10, 85%, 61%, 1);
+$isabelline: hsla(18, 22%, 91%, 1);
+$platinum: hsla(60, 1%, 85%, 1);
+$black-olive: hsla(72, 10%, 20%, 1);
+$vivid-sky-blue: hsla(197, 78%, 64%, 1); */
+  }
+  
+  :root {
+    --background: 197 60% 93%; /* Cosmic Latte */
+    --foreground: 72 1% 17%; /* Jet */
 
     --card: 0 0% 100%; /* White */
     --card-foreground: 120 1% 17%; /* Jet */
 
     --popover: 0 0% 100%; /* White */
-    --popover-foreground: 120 1% 17%; /* Jet */
+    --popover-foreground: 60 1% 17%; /* Jet */
 
-    --primary: 345 76% 58%; /* Cerise */
+    --primary: 10 76% 58%; /* Cerise */
     --primary-foreground: 0 0% 100%; /* White */
 
     --secondary: 14 100% 70%; /* Coral */
