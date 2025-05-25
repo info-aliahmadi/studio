@@ -11,43 +11,43 @@ body {
     scroll-behavior: smooth;
   }
   :root {
-    --background: 210 17% 98%; /* User: #F9FAFB */
-    --foreground: 215 28% 17%; /* User: #1F2937 */
+    --background: 210 17% 98%; /* Light theme default, overridden by .dark */
+    --foreground: 215 28% 17%; /* Light theme default, overridden by .dark */
 
-    --card: 0 0% 100%; /* White */
-    --card-foreground: 215 28% 17%; /* User: #1F2937 */
+    --card: 0 0% 100%;
+    --card-foreground: 215 28% 17%;
 
-    --popover: 0 0% 100%; /* White */
-    --popover-foreground: 215 28% 17%; /* User: #1F2937 */
+    --popover: 0 0% 100%;
+    --popover-foreground: 215 28% 17%;
 
-    --primary: 243 78% 59%; /* User: #4F46E5 */
-    --primary-foreground: 0 0% 100%; /* White for contrast */
+    --primary: 243 78% 59%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 330 83% 60%; /* New: #EC4899 Vibrant Pink */
-    --secondary-foreground: 0 0% 100%; /* White for contrast */
+    --secondary: 330 83% 60%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 210 16% 93%; /* Light grey */
-    --muted-foreground: 215 20% 45%; /* Darker grey text */
+    --muted: 210 16% 93%;
+    --muted-foreground: 215 20% 45%;
 
-    --accent: 45 96% 56%; /* User: #FBBF24 */
-    --accent-foreground: 40 50% 15%; /* Dark brown for contrast on yellow */
+    --accent: 45 96% 56%;
+    --accent-foreground: 40 50% 15%;
 
-    --destructive: 0 84% 60%; /* Vibrant Red */
-    --destructive-foreground: 0 0% 100%; /* White */
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 210 14% 89%; /* Light grey border */
-    --input: 0 0% 100%; /* White input background */
-    --ring: 243 78% 59%; /* Primary color for rings */
+    --border: 210 14% 89%;
+    --input: 0 0% 100%;
+    --ring: 243 78% 59%;
 
     --radius: 0.5rem;
 
     --chart-1: 243 78% 59%;
-    --chart-2: 330 83% 60%; /* New Vibrant Pink */
+    --chart-2: 330 83% 60%;
     --chart-3: 45 96% 56%;
-    --chart-4: 243 70% 70%; /* Lighter primary */
-    --chart-5: 330 73% 75%; /* Lighter Vibrant Pink */
+    --chart-4: 243 70% 70%;
+    --chart-5: 330 73% 75%;
 
-    /* Sidebar Colors */
+    /* Sidebar Colors for light theme */
     --sidebar-background: 210 17% 96%;
     --sidebar-foreground: 215 28% 17%;
     --sidebar-primary: 243 78% 59%;
@@ -56,6 +56,52 @@ body {
     --sidebar-accent-foreground: 40 50% 15%;
     --sidebar-border: 210 14% 85%;
     --sidebar-ring: 243 78% 59%;
+  }
+
+  .dark {
+    --background: 220 25% 10%; /* Very Dark Blue */
+    --foreground: 210 30% 85%; /* Light Cool Gray */
+
+    --card: 220 25% 15%; /* Slightly Lighter Dark Blue */
+    --card-foreground: 210 30% 85%; /* Light Cool Gray */
+
+    --popover: 220 25% 13%; /* Darker than card */
+    --popover-foreground: 210 30% 85%; /* Light Cool Gray */
+
+    --primary: 260 70% 60%; /* Vibrant Purple */
+    --primary-foreground: 0 0% 100%; /* White for contrast */
+
+    --secondary: 180 70% 50%; /* Bright Teal */
+    --secondary-foreground: 220 25% 10%; /* Dark Blue for contrast */
+
+    --muted: 220 20% 25%; /* Dark Gray */
+    --muted-foreground: 210 25% 60%; /* Medium Gray text */
+
+    --accent: 50 90% 55%; /* Gold Yellow */
+    --accent-foreground: 220 25% 10%; /* Dark Blue for contrast on yellow */
+
+    --destructive: 0 70% 55%; /* Vibrant Red */
+    --destructive-foreground: 0 0% 100%; /* White */
+
+    --border: 220 20% 30%; /* Darker Gray border */
+    --input: 220 20% 20%; /* Dark input background */
+    --ring: 260 70% 60%; /* Primary color for rings */
+
+    --chart-1: 260 70% 60%; /* Vibrant Purple */
+    --chart-2: 180 70% 50%; /* Bright Teal */
+    --chart-3: 50 90% 55%; /* Gold Yellow */
+    --chart-4: 260 70% 70%; /* Lighter Purple */
+    --chart-5: 180 70% 65%; /* Lighter Teal */
+
+    /* Sidebar Colors for dark theme */
+    --sidebar-background: 220 25% 12%;
+    --sidebar-foreground: 210 30% 85%;
+    --sidebar-primary: 260 70% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 50 90% 55%;
+    --sidebar-accent-foreground: 220 25% 10%;
+    --sidebar-border: 220 20% 25%;
+    --sidebar-ring: 260 70% 60%;
   }
 }
 
