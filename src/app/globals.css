@@ -8,41 +8,41 @@ body {
 
 @layer base {
   :root {
-    --background: 209 42% 12%; /* #121E29 */
-    --foreground: 210 40% 98%; /* Light grey/white for text */
+    --background: 250 15% 8%; /* Deep Dark Indigo */
+    --foreground: 220 15% 96%; /* Very Light Cool Grey */
 
-    --card: 209 38% 18%; /* Slightly lighter than background, e.g., #1A2633 */
-    --card-foreground: 210 40% 98%;
+    --card: 250 15% 12%; /* Dark Indigo */
+    --card-foreground: 220 15% 96%;
 
-    --popover: 209 38% 18%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 250 15% 12%;
+    --popover-foreground: 220 15% 96%;
 
-    --primary: 208 38% 51%; /* #5885AF */
-    --primary-foreground: 210 40% 98%; /* White/light text on primary blue */
+    --primary: 180 70% 45%; /* Vibrant Teal */
+    --primary-foreground: 180 10% 95%; /* Very Light Teal/Grey */
 
-    --secondary: 209 35% 25%; /* e.g. #2A3A4B, for secondary buttons or elements */
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 180 50% 30%; /* Dark Teal */
+    --secondary-foreground: 180 10% 95%;
 
-    --muted: 209 30% 30%; /* e.g. #38495A */
-    --muted-foreground: 210 25% 70%; /* Lighter grey for muted text */
+    --muted: 250 10% 25%; /* Muted Purple/Grey */
+    --muted-foreground: 220 10% 65%; /* Medium Cool Grey */
 
-    --accent: 188 42% 59%; /* #63BCC9 */
-    --accent-foreground: 209 100% 5%; /* Very dark, almost black for contrast on cyan */
+    --accent: 320 80% 55%; /* Vibrant Pink/Magenta */
+    --accent-foreground: 320 100% 10%; /* Very Dark Magenta */
 
-    --destructive: 0 63% 51%; /* Standard red */
+    --destructive: 0 70% 50%; /* Standard Red */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 209 30% 25%; /* e.g. #2A3A4B */
-    --input: 209 35% 22%; /* e.g. #24313F, background for input fields */
-    --ring: 188 42% 59%; /* Accent color for focus rings */
+    --border: 250 10% 20%; /* Dark Purple/Grey Border */
+    --input: 250 15% 15%; /* Dark Input Background */
+    --ring: 320 80% 55%; /* Accent Pink for Ring */
 
     --radius: 0.5rem;
 
-    --chart-1: 220 70% 50%;
-    --chart-2: 160 60% 45%;
-    --chart-3: 30 80% 55%;
-    --chart-4: 280 65% 60%;
-    --chart-5: 340 75% 55%;
+    --chart-1: 180 70% 50%;
+    --chart-2: 320 70% 60%;
+    --chart-3: 210 60% 55%;
+    --chart-4: 45 80% 60%;
+    --chart-5: 270 60% 65%;
   }
 }
 
