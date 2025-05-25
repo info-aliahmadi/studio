@@ -8,40 +8,40 @@ body {
 
 @layer base {
   :root {
-    --background: 250 15% 8%; /* Deep Dark Indigo */
-    --foreground: 220 15% 96%; /* Very Light Cool Grey */
+    --background: 210 40% 9%; /* Deep Nordic Blue */
+    --foreground: 210 10% 95%; /* Light Cool Grey */
 
-    --card: 250 15% 12%; /* Dark Indigo */
-    --card-foreground: 220 15% 96%;
+    --card: 210 40% 12%; /* Dark Nordic Blue */
+    --card-foreground: 210 10% 95%;
 
-    --popover: 250 15% 12%;
-    --popover-foreground: 220 15% 96%;
+    --popover: 210 40% 12%;
+    --popover-foreground: 210 10% 95%;
 
-    --primary: 180 70% 45%; /* Vibrant Teal */
-    --primary-foreground: 180 10% 95%; /* Very Light Teal/Grey */
+    --primary: 160 70% 40%; /* Aurora Green */
+    --primary-foreground: 160 10% 95%; /* Very Light Green/Grey */
 
-    --secondary: 180 50% 30%; /* Dark Teal */
-    --secondary-foreground: 180 10% 95%;
+    --secondary: 160 50% 25%; /* Dark Aurora Green */
+    --secondary-foreground: 160 10% 95%;
 
-    --muted: 250 10% 25%; /* Muted Purple/Grey */
-    --muted-foreground: 220 10% 65%; /* Medium Cool Grey */
+    --muted: 210 20% 25%; /* Muted Nordic Blue/Grey */
+    --muted-foreground: 210 10% 65%; /* Medium Cool Grey */
 
-    --accent: 320 80% 55%; /* Vibrant Pink/Magenta */
-    --accent-foreground: 320 100% 10%; /* Very Dark Magenta */
+    --accent: 330 75% 55%; /* Soft Berry Pink */
+    --accent-foreground: 330 100% 10%; /* Very Dark Berry Pink */
 
-    --destructive: 0 70% 50%; /* Standard Red */
+    --destructive: 0 65% 50%; /* Standard Red */
     --destructive-foreground: 0 0% 98%;
 
-    --border: 250 10% 20%; /* Dark Purple/Grey Border */
-    --input: 250 15% 15%; /* Dark Input Background */
-    --ring: 320 80% 55%; /* Accent Pink for Ring */
+    --border: 210 20% 20%; /* Dark Nordic Blue/Grey Border */
+    --input: 210 40% 15%; /* Dark Input Background (Nordic Blue) */
+    --ring: 160 70% 40%; /* Aurora Green for Ring */
 
     --radius: 0.5rem;
 
-    --chart-1: 180 70% 50%;
-    --chart-2: 320 70% 60%;
-    --chart-3: 210 60% 55%;
-    --chart-4: 45 80% 60%;
+    --chart-1: 160 70% 45%;
+    --chart-2: 330 70% 60%;
+    --chart-3: 200 60% 55%;
+    --chart-4: 50 80% 60%;
     --chart-5: 270 60% 65%;
   }
 }
