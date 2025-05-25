@@ -40,7 +40,7 @@ export default async function RootLayout(props: Readonly<{ // Changed to accept 
 
   unstable_setRequestLocale(locale);
 
-  const messages = await getMessages();
+  const messages = await getMessages({locale});
   const dir = (locale === 'ar' || locale === 'fa') ? 'rtl' : 'ltr';
 
   return (
