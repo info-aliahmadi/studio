@@ -74,7 +74,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <Card className="shadow-xl hover:shadow-primary/20 transition-shadow duration-300">
+          <Card className="shadow-xl hover:shadow-primary/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
             <CardHeader>
               <CardTitle className="text-2xl">Send us a Message</CardTitle>
               <CardDescription>We typically respond within 24 hours.</CardDescription>
@@ -130,7 +130,7 @@ export default function ContactSection() {
           </Card>
           
           <div className="space-y-8">
-            <Card className="shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
+            <Card className="shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
               <CardHeader>
                 <CardTitle className="text-xl">Contact Information</CardTitle>
               </CardHeader>
@@ -149,7 +149,7 @@ export default function ContactSection() {
                 </div>
               </CardContent>
             </Card>
-             <Card className="shadow-lg hover:shadow-accent/20 transition-shadow duration-300">
+             <Card className="shadow-lg hover:shadow-accent/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
               <CardHeader>
                 <CardTitle className="text-xl">Business Hours</CardTitle>
               </CardHeader>

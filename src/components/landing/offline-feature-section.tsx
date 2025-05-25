@@ -35,7 +35,7 @@ export default function OfflineFeatureSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {offlineFeatures.map((feature, index) => (
-            <Card key={index} className="text-center shadow-lg hover:shadow-primary/20 transition-shadow duration-300">
+            <Card key={index} className="text-center shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
               <CardHeader>
                 <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4">
                   <feature.icon className="h-8 w-8 text-primary" />

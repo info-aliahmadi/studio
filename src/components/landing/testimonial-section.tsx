@@ -45,7 +45,7 @@ export default function TestimonialSection() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (
-            <Card key={index} className="flex flex-col justify-between p-6 shadow-lg hover:shadow-accent/30 transition-shadow duration-300">
+            <Card key={index} className="flex flex-col justify-between p-6 shadow-lg hover:shadow-accent/30 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
               <div>
                 <div className="flex mb-2">
                   {[...Array(5)].map((_, i) => (

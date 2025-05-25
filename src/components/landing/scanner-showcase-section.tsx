@@ -18,7 +18,7 @@ export default function ScannerShowcaseSection() {
 
         <Card className="overflow-hidden shadow-xl hover:shadow-primary/30 transition-shadow duration-300">
           <CardHeader className="p-0">
-            <div className="relative aspect-video w-full">
+            <div className="relative aspect-video w-full group">
               <Image
                 src="https://placehold.co/1280x720.png"
                 alt="Scanner system in action"
@@ -27,7 +27,7 @@ export default function ScannerShowcaseSection() {
                 data-ai-hint="scanner technology"
               />
               <div className="absolute inset-0 flex items-center justify-center bg-black/40">
-                <PlayCircle className="h-20 w-20 text-white/80 hover:text-white transition-colors cursor-pointer" />
+                <PlayCircle className="h-20 w-20 text-white/80 hover:text-white group-hover:scale-110 transform transition-all duration-300 ease-in-out cursor-pointer" />
               </div>
             </div>
           </CardHeader>
