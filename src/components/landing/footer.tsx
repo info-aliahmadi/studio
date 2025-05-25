@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import { ScanLine, Facebook, Twitter, Linkedin } from "lucide-react";
+import { ScanLine, Facebook, Twitter, Linkedin, ChevronRight } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -19,17 +19,47 @@ export default function Footer() {
           <div>
             <h5 className="font-semibold text-foreground mb-3">Quick Links</h5>
             <ul className="space-y-2">
-              <li><Link href="#features" className="text-sm text-muted-foreground hover:text-primary">Features</Link></li>
-              <li><Link href="#reports" className="text-sm text-muted-foreground hover:text-primary">Reports</Link></li>
-              <li><Link href="#offline" className="text-sm text-muted-foreground hover:text-primary">Offline Mode</Link></li>
-              <li><Link href="#contact" className="text-sm text-muted-foreground hover:text-primary">Contact Us</Link></li>
+              <li>
+                <Link href="#features" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Features
+                </Link>
+              </li>
+              <li>
+                <Link href="#reports" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Reports
+                </Link>
+              </li>
+              <li>
+                <Link href="#offline" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Offline Mode
+                </Link>
+              </li>
+              <li>
+                <Link href="#contact" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Contact Us
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
             <h5 className="font-semibold text-foreground mb-3">Legal</h5>
             <ul className="space-y-2">
-              <li><Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary">Privacy Policy</Link></li>
-              <li><Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary">Terms of Service</Link></li>
+              <li>
+                <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Privacy Policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms-of-service" className="text-sm text-muted-foreground hover:text-primary flex items-center group">
+                  <ChevronRight className="h-4 w-4 mr-1 opacity-0 group-hover:opacity-100 transition-opacity duration-200" />
+                  Terms of Service
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

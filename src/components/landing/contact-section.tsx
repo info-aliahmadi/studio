@@ -1,3 +1,4 @@
+
 "use client";
 
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -64,7 +65,7 @@ export default function ContactSection() {
     <section id="contact" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight hover:text-primary/90 transition-colors duration-300">
+          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
             Get in Touch
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-lg text-muted-foreground">
