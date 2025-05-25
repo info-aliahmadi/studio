@@ -8,41 +8,51 @@ body {
 
 @layer base {
   :root {
-    --background: 210 40% 9%; /* Deep Nordic Blue */
-    --foreground: 210 10% 95%; /* Light Cool Grey */
+    --background: 210 17% 98%; /* User: #F9FAFB */
+    --foreground: 215 28% 17%; /* User: #1F2937 */
 
-    --card: 210 40% 12%; /* Dark Nordic Blue */
-    --card-foreground: 210 10% 95%;
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 215 28% 17%; /* User: #1F2937 */
 
-    --popover: 210 40% 12%;
-    --popover-foreground: 210 10% 95%;
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 215 28% 17%; /* User: #1F2937 */
 
-    --primary: 160 70% 40%; /* Aurora Green */
-    --primary-foreground: 160 10% 95%; /* Very Light Green/Grey */
+    --primary: 243 78% 59%; /* User: #4F46E5 */
+    --primary-foreground: 0 0% 100%; /* White for contrast */
 
-    --secondary: 160 50% 25%; /* Dark Aurora Green */
-    --secondary-foreground: 160 10% 95%;
+    --secondary: 174 80% 40%; /* User: #14B8A6 */
+    --secondary-foreground: 0 0% 100%; /* White for contrast */
 
-    --muted: 210 20% 25%; /* Muted Nordic Blue/Grey */
-    --muted-foreground: 210 10% 65%; /* Medium Cool Grey */
+    --muted: 210 16% 93%; /* Light grey */
+    --muted-foreground: 215 20% 45%; /* Darker grey text */
 
-    --accent: 330 75% 55%; /* Soft Berry Pink */
-    --accent-foreground: 330 100% 10%; /* Very Dark Berry Pink */
+    --accent: 45 96% 56%; /* User: #FBBF24 */
+    --accent-foreground: 40 50% 15%; /* Dark brown for contrast on yellow */
 
-    --destructive: 0 65% 50%; /* Standard Red */
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%; /* Vibrant Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --border: 210 20% 20%; /* Dark Nordic Blue/Grey Border */
-    --input: 210 40% 15%; /* Dark Input Background (Nordic Blue) */
-    --ring: 160 70% 40%; /* Aurora Green for Ring */
+    --border: 210 14% 89%; /* Light grey border */
+    --input: 0 0% 100%; /* White input background */
+    --ring: 243 78% 59%; /* Primary color for rings */
 
     --radius: 0.5rem;
 
-    --chart-1: 160 70% 45%;
-    --chart-2: 330 70% 60%;
-    --chart-3: 200 60% 55%;
-    --chart-4: 50 80% 60%;
-    --chart-5: 270 60% 65%;
+    --chart-1: 243 78% 59%;
+    --chart-2: 174 80% 40%;
+    --chart-3: 45 96% 56%;
+    --chart-4: 243 70% 70%; /* Lighter primary */
+    --chart-5: 174 70% 55%; /* Lighter secondary */
+
+    /* Sidebar Colors */
+    --sidebar-background: 210 17% 96%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 243 78% 59%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 45 96% 56%;
+    --sidebar-accent-foreground: 40 50% 15%;
+    --sidebar-border: 210 14% 85%;
+    --sidebar-ring: 243 78% 59%;
   }
 }
 

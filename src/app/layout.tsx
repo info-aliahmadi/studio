@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark"> {/* Assuming dark is the default theme now */}
+    <html lang="en"> {/* Removed className="dark" for light theme */}
       <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
         {children}
         <Toaster />
