@@ -35,7 +35,12 @@ export default function TestimonialSection() {
     <section id="testimonials" className="py-16 sm:py-24 bg-secondary/20">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h2 className="text-3xl sm:text-4xl font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+          <h2
+            style={{
+              backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+            }} className="text-5xl sm:text-5xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
             Trusted by Businesses Like Yours
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
