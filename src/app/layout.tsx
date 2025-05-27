@@ -1,6 +1,6 @@
 
 import type {Metadata} from 'next';
-import { Geist, Geist_Mono } from 'next/font/google';
+import { Geist, Roboto_Serif } from 'next/font/google';
 import './globals.css';
 import { Toaster } from "@/components/ui/toaster";
 
@@ -9,7 +9,7 @@ const geistSans = Geist({
   subsets: ['latin'],
 });
 
-const geistMono = Geist_Mono({
+const geistMono = Roboto_Serif({
   variable: '--font-geist-mono',
   subsets: ['latin'],
 });
@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">{/* Removed className="dark" to enable light theme by default */}
-    <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased`}>
+    <body className={`${geistSans.variable} ${geistMono.variable} font-sans antialiased dark`}>
       {children}
       <Toaster />
     </body>

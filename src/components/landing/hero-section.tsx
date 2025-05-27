@@ -35,7 +35,7 @@ export default function HeroSection() {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
           <h1
             className={cn(
-              "text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight mb-6 text-foreground",
+              "text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight mb-6 text-foreground",
               "transform transition-all ease-in-out duration-700 delay-200",
               isMounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5"
             )}

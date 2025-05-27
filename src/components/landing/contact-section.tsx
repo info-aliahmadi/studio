@@ -62,7 +62,7 @@ export default function ContactSection() {
   }, [state, toast, form]);
 
   return (
-    <section id="contact" className="py-16 sm:py-24 bg-background">
+    <section style={{ marginTop: '-6px', paddingTop: '0' }} id="contact" className="py-16 sm:py-24 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
@@ -70,7 +70,7 @@ export default function ContactSection() {
               backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }} className="text-5xl sm:text-5xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+            }} className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
             Get in Touch
           </h2>
           <p className="mt-4 max-w-xl mx-auto text-lg text-muted-foreground">

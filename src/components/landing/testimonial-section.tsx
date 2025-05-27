@@ -2,6 +2,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star } from "lucide-react";
+import Wave from "react-wavify";
 
 const testimonials = [
   {
@@ -32,15 +33,15 @@ const testimonials = [
 
 export default function TestimonialSection() {
   return (
-    <section id="testimonials" className="py-16 sm:py-24 bg-secondary/20">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+    <section style={{ paddingBottom: '0' , paddingTop : '0' }} id="testimonials" className="py-16 sm:py-24 bg-secondary/20">
+      <div style={{ paddingBottom: '50px' }} className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2
             style={{
               backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
-            }} className="text-5xl sm:text-5xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+            }} className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
             Trusted by Businesses Like Yours
           </h2>
           <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -56,9 +57,8 @@ export default function TestimonialSection() {
                   {[...Array(5)].map((_, i) => (
                     <Star
                       key={i}
-                      className={`h-5 w-5 ${
-                        i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-muted-foreground"
-                      }`}
+                      className={`h-5 w-5 ${i < testimonial.rating ? "text-yellow-400 fill-yellow-400" : "text-muted-foreground"
+                        }`}
                     />
                   ))}
                 </div>
@@ -80,6 +80,16 @@ export default function TestimonialSection() {
           ))}
         </div>
       </div>
+      <Wave
+        paused={false}
+        fill="#131720"
+        options={{
+          height: 20,
+          amplitude: 80,
+          speed: 0.09,
+          points: 3
+        }}
+      />
     </section>
   );
 }

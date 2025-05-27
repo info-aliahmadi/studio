@@ -34,14 +34,14 @@ export default function ReportGallerySection() {
       <section id="reports" style={{ marginTop: '-6px',paddingBottom : '0' }} className="py-16 sm:py-1 bg-secondary/20">
         <div style={{ marginBottom : '70px' }} className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h1
+            <h2
               style={{
                 backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-              }} className="text-5xl sm:text-5xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+              }} className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
               Powerful Reports at Your Fingertips
-            </h1>
+            </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
               Unlock valuable insights with our comprehensive and easy-to-understand chart reports.
             </p>
@@ -74,11 +74,11 @@ export default function ReportGallerySection() {
         </div>
         <Wave
         paused={false}
-        fill="#e2f8ef"
+        fill="#131720"
         options={{
-          height: 60,
-          amplitude: 100,
-          speed: 0.15,
+          height: 40,
+          amplitude: 90,
+          speed: 0.1,
           points: 2
         }}
       />

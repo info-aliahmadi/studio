@@ -34,7 +34,7 @@ export default function DebtCreditManagementSection() {
                 backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent",
-              }} className="text-5xl sm:text-5xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+              }} className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
               Manage Customer Debt & Credit
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -59,16 +59,6 @@ export default function DebtCreditManagementSection() {
           </div>
         </div>
       </section>
-      <Wave
-        paused={false}
-        fill="#8aff6633"
-        options={{
-          height: 40,
-          amplitude: 50,
-          speed: 0.2,
-          points: 3
-        }}
-      />
     </>
   );
 }
