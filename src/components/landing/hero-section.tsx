@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
-import Wave from 'react-wavify'
 import { useTranslations } from "next-intl";
 
 export default function HeroSection() {
@@ -43,13 +42,7 @@ export default function HeroSection() {
             <span
               className="block"
             >{t("line1")}</span>
-            <span
-              style={{
-                backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }}
-               className="block text-primary hover:opacity-90 transition-opacity duration-300">{t("line2")}</span>
+            <span className="block text-primary hover:opacity-90 transition-opacity duration-300 green-header">{t("line2")}</span>
           </h1>
           <p
             className={cn(

@@ -12,6 +12,7 @@ body {
   }
 
   :root {
+
     /* CSS HSL */
     --celadon: hsla(124, 31%, 73%, 1);
     --cambridge-blue: hsla(169, 17%, 61%, 1);
@@ -143,7 +144,9 @@ body {
     --sidebar-accent-foreground: 220 25% 10%;
     --sidebar-border: 220 20% 25%;
     --sidebar-ring: 260 70% 60%;
+
   }
+
 }
 
 @layer base {
@@ -156,4 +159,22 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
+  .text-white {
+    color: #fff;
+  }
+  .pink-header {
+    background-image: linear-gradient(to right, hsl(260deg 94.66% 37.29%), hsl(252deg 100% 77.93%));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .green-header {
+
+    background-image: linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
 }

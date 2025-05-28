@@ -48,12 +48,8 @@ export default function OfflineFeatureSection() {
       <section id="offline"  style={{ marginTop: '-6px',paddingBottom : '0' }} className="py-16 sm:py-24 bg-background">
         <div style={{ marginBottom : '70px' }} className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2
-              style={{
-                backgroundImage: "linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1))",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-              }} className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary hover:text-primary/90 transition-colors duration-300">
+            <h2 className="text-7xl sm:text-6xl p-4 font-bold tracking-tight text-primary
+             hover:text-primary/90 transition-colors duration-300 pink-header">
               Work Seamlessly, Online or Offline
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-lg text-muted-foreground">
@@ -65,8 +61,8 @@ export default function OfflineFeatureSection() {
             {offlineFeatures.map((feature, index) => (
               <Card key={index} className="text-center shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                 <CardHeader>
-                  <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-full bg-primary/10 mb-4 animate-pulse-icon">
-                    <feature.icon className="h-8 w-8 text-primary transition-transform duration-300 group-hover:scale-110" />
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 mb-4 animate-pulse-icon">
+                    <feature.icon className="h-12 w-12 text-primary transition-transform duration-300 group-hover:scale-110" />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>

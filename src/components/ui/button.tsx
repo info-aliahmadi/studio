@@ -9,15 +9,21 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        default: "bg-primary text-primary-foreground hover:bg-primary/90", // Keep default as solid for a base
         destructive:
-          "bg-destructive text-destructive-foreground hover:bg-destructive/90",
+          "bg-destructive text-destructive-foreground hover:bg-destructive/90", // Keep destructive as solid
         outline:
-          "border border-input bg-background hover:bg-accent hover:text-accent-foreground",
+          "border border-input bg-background hover:bg-accent hover:text-accent-foreground", // Keep outline as is
         secondary:
-          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
-        ghost: "hover:bg-accent hover:text-accent-foreground",
-        link: "text-primary underline-offset-4 hover:underline",
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80", // Keep secondary as solid
+        gradient:
+          "bg-gradient-to-r from-primary to-secondary text-primary-foreground hover:from-primary/90 hover:to-secondary/90",
+ ghost: "hover:bg-accent hover:text-accent-foreground", // Keep ghost as is
+ link: "text-primary underline-offset-4 hover:underline", // Keep link as is
+        gradient_destructive:
+          "bg-gradient-to-r from-destructive to-red-600 text-destructive-foreground hover:from-destructive/90 hover:to-red-600/90",
+        gradient_secondary:
+          "bg-gradient-to-r from-secondary to-blue-600 text-secondary-foreground hover:from-secondary/90 hover:to-blue-600/90",
       },
       size: {
         default: "h-10 px-4 py-2",
@@ -31,7 +37,7 @@ const buttonVariants = cva(
       size: "default",
     },
   }
-)
+);
 
 export interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
@@ -52,5 +58,4 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   }
 )
 Button.displayName = "Button"
-
 export { Button, buttonVariants }
