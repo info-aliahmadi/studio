@@ -12,95 +12,55 @@ body {
   }
 
   :root {
+    --background: 210 17% 98%; /* #F9FAFB */
+    --foreground: 215 28% 17%; /* #1F2937 */
 
-    /* CSS HSL */
-    --celadon: hsla(124, 31%, 73%, 1);
-    --cambridge-blue: hsla(169, 17%, 61%, 1);
-    --licorice: hsla(300, 21%, 5%, 1);
-    --satin-sheen-gold: hsla(49, 87%, 38%, 1);
-    --cream: hsla(63, 65%, 88%, 1);
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 215 28% 17%; /* #1F2937 */
 
-    --background: 154 60% 93%;
-    /* Cosmic Latte */
-    --foreground: 189 1% 17%;
-    /* Jet */
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 215 28% 17%; /* #1F2937 */
 
-    --card: 0 0% 100%;
-    /* White */
-    --card-foreground: 120 1% 17%;
-    /* Jet */
+    --primary: 243 75% 58%; /* #4F46E5 */
+    --primary-foreground: 0 0% 100%; /* White for contrast on primary */
 
-    --popover: 0 0% 100%;
-    /* White */
-    --popover-foreground: 106 1% 17%;
-    /* Jet */
+    --secondary: 174 80% 40%; /* #14B8A6 */
+    --secondary-foreground: 0 0% 100%; /* White for contrast on secondary */
 
-    --primary: 189 76% 30%;
-    /* Cerise */
-    --primary-foreground: 0 0% 100%;
-    /* White */
+    --muted: 210 17% 92%; /* Lighter gray, derived from background */
+    --muted-foreground: 215 28% 35%; /* Slightly lighter text for muted */
 
-    --secondary: 106 100% 70%;
-    /* Coral */
-    --secondary-foreground: 120 1% 17%;
-    /* Jet */
+    --accent: 45 96% 56%; /* #FBBF24 */
+    --accent-foreground: 215 28% 17%; /* Dark text for contrast on accent */
 
-    --muted: 49 30% 88%;
-    /* Lighter, desaturated Cosmic Latte */
-    --muted-foreground: 44 7% 45%;
-    /* Slightly lighter Dim Gray */
+    --destructive: 0 84% 60%; /* Default Red */
+    --destructive-foreground: 0 0% 100%; /* White */
 
-    --accent: 72 7% 41%;
-    /* Dim Gray */
-    --accent-foreground: 49 60% 93%;
-    /* Cosmic Latte (for text on Dim Gray) */
-
-    --destructive: 0 84% 60%;
-    /* Default Red */
-    --destructive-foreground: 0 0% 100%;
-    /* White */
-
-    --border: 49 20% 85%;
-    /* Subtle Cosmic Latte based border */
-    --input: 0 0% 100%;
-    /* White */
-    --ring: 345 76% 58%;
-    /* Cerise (Primary) */
+    --border: 210 17% 90%; /* Subtle border based on background */
+    --input: 0 0% 100%; /* White */
+    --ring: 243 75% 58%; /* Primary color for focus rings */
 
     --radius: 0.5rem;
 
-    --chart-1: 345 76% 58%;
-    /* Cerise */
-    --chart-2: 14 100% 70%;
-    /* Coral */
-    --chart-3: 44 7% 41%;
-    /* Dim Gray */
-    --chart-4: 345 76% 70%;
-    /* Lighter Cerise */
-    --chart-5: 14 100% 80%;
-    /* Lighter Coral */
+    --chart-1: 243 75% 58%; /* Primary */
+    --chart-2: 174 80% 40%; /* Secondary */
+    --chart-3: 45 96% 56%; /* Accent */
+    --chart-4: 243 75% 70%; /* Lighter Primary */
+    --chart-5: 174 80% 55%; /* Lighter Secondary */
 
     /* Sidebar Colors for light theme */
-    --sidebar-background: 49 55% 91%;
-    /* Slightly darker/off Cosmic Latte */
-    --sidebar-foreground: 120 1% 17%;
-    /* Jet */
-    --sidebar-primary: 345 76% 58%;
-    /* Cerise */
+    --sidebar-background: 210 17% 95%;
+    --sidebar-foreground: 215 28% 17%;
+    --sidebar-primary: 243 75% 58%;
     --sidebar-primary-foreground: 0 0% 100%;
-    /* White */
-    --sidebar-accent: 44 7% 41%;
-    /* Dim Gray */
-    --sidebar-accent-foreground: 49 60% 93%;
-    /* Cosmic Latte */
-    --sidebar-border: 49 20% 85%;
-    /* Subtle Cosmic Latte based border */
-    --sidebar-ring: 345 76% 58%;
-    /* Cerise */
+    --sidebar-accent: 45 96% 56%;
+    --sidebar-accent-foreground: 215 28% 17%;
+    --sidebar-border: 210 17% 88%;
+    --sidebar-ring: 243 75% 58%;
   }
 
   .dark {
-    /* These are the previous dark theme values, kept for reference or future use */
+    /* Keeping dark theme variables for potential future use, but it won't be active by default */
     --background: 220 25% 10%;
     --foreground: 210 30% 85%;
 
@@ -144,9 +104,7 @@ body {
     --sidebar-accent-foreground: 220 25% 10%;
     --sidebar-border: 220 20% 25%;
     --sidebar-ring: 260 70% 60%;
-
   }
-
 }
 
 @layer base {
@@ -160,21 +118,19 @@ body {
     -moz-osx-font-smoothing: grayscale;
   }
   .text-white {
-    color: #fff;
+    color: hsl(var(--primary-foreground)); /* Use theme variable for white text if on primary/secondary */
   }
-  .pink-header {
-    background-image: linear-gradient(to right, hsl(260deg 94.66% 37.29%), hsl(252deg 100% 77.93%));
+  .pink-header { /* Renamed to primary-gradient-header for clarity */
+    background-image: linear-gradient(to right, hsl(var(--primary)), hsl(243, 75%, 68%)); /* Primary to lighter Primary */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
-  .green-header {
-
-    background-image: linear-gradient(to right, hsla(197, 93%, 29%, 1), hsla(167, 98%, 39%, 1));
+  .green-header { /* Renamed to secondary-gradient-header for clarity */
+    background-image: linear-gradient(to right, hsl(var(--secondary)), hsl(174, 80%, 55%)); /* Secondary to lighter Secondary */
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-
 }
