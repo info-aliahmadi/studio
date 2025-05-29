@@ -48,7 +48,7 @@ export default function ScannerShowcaseSection() {
       </section>
       <Wave
         paused={false}
-        fill="#26d9d933"
+        fill="#cbedea"
         options={{
           height: 20,
           amplitude: 73,

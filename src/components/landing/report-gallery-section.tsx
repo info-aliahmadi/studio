@@ -47,7 +47,7 @@ export default function ReportGallerySection() {
             {reports.map((report, index) => (
               <Card key={index} className="flex flex-col overflow-hidden shadow-lg hover:shadow-accent/30 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                 <CardHeader className="flex-row items-center gap-4 p-4">
-                  <report.icon className="h-10 w-10 text-primary" />
+                  <report.icon className="h-10 w-10 text-secondary" />
                   <div>
                     <CardTitle className="text-xl">{report.title}</CardTitle>
                   </div>
@@ -70,7 +70,7 @@ export default function ReportGallerySection() {
         </div>
         <Wave
         paused={false}
-        fill="#131720"
+        fill="#F9FAFB"
         options={{
           height: 40,
           amplitude: 90,

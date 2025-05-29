@@ -75,7 +75,7 @@ export default function OfflineFeatureSection() {
         </div>
         <Wave
         paused={false}
-        fill="#26d9d933"
+        fill="#cbedea"
         options={{
           height: 20,
           amplitude: 90,

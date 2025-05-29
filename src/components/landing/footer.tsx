@@ -20,9 +20,8 @@ export default async function Footer() { // Made component async
   return (
     <footer className="bg-secondary/30 "
       style={{
-        background: "#1d2330",
-        borderTop: '1px solid #3d475c',
-        boxShadow: 'inset rgb(255 255 255 / 2%) 0px 10px 14px 0px, rgba(0, 0, 0, 0.1) 0px -20px 15px -3px, rgba(0, 0, 0, 0.1) 0px -20px 4px -4px'
+        background: "#f9fafb",
+        boxShadow: '0 4px 24px rgba(0, 0, 0, 0.08)'
       }}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">

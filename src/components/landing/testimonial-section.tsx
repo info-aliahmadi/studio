@@ -78,7 +78,7 @@ export default function TestimonialSection() {
       </div>
       <Wave
         paused={false}
-        fill="#131720"
+        fill="#F9FAFB"
         options={{
           height: 20,
           amplitude: 80,

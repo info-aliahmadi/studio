@@ -44,10 +44,10 @@ export default function DebtCreditManagementSection() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <Card key={index} className="text-center shadow-lg hover:shadow-primary/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
+              <Card key={index} className="text-center shadow-lg hover:shadow-secondary/20 hover:-translate-y-1 transform transition-all duration-300 ease-in-out">
                 <CardHeader>
-                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-primary/10 mb-4">
-                    <feature.icon className="h-12 w-12 text-primary" />
+                  <div className="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-secondary/10 mb-4">
+                    <feature.icon className="h-12 w-12 text-secondary" />
                   </div>
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
